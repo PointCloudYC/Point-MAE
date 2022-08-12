@@ -4,6 +4,15 @@ data/
 best/
 /.idea/
 
+# vscode
+.vscode/*
+
 dist/
 build/
 *.egg-info/
+
+# log and cpython files
+*/*/__pycache__/__init__.cpython-38.pyc
+experiments/**/*.log
+experiments/**/events.out.*
+

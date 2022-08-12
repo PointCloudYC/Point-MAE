@@ -6,7 +6,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--config', 
-        type = str, 
+        type = str, default='cfgs/pretrain.yaml',
         help = 'yaml config file')
     parser.add_argument(
         '--launcher',
