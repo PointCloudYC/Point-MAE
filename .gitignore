@@ -13,6 +13,7 @@ build/
 
 # log and cpython files
 */*/__pycache__/__init__.cpython-38.pyc
+experiments/**
 experiments/**/*.log
 experiments/**/events.out.*
 
