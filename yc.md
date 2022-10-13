@@ -3,7 +3,8 @@
 - [x] run the code on modelnet40
   - pretrain, 5.5h for training on server-HP (4 t4 GPUs)
   - fine tune, very slow for fine-tuning, cost ~ 15h (all gpus are not used)
-- master the Point-MAE paper
+  -  acc = 92.3825 on the ModelNet40
+- [x] master the Point-MAE paper
 - [ ] run the code on Pipework
 
 
