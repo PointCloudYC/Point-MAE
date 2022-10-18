@@ -1,0 +1,6 @@
+NAME: Pipework
+# DATA_PATH: data/Pipework/modelnet40_normal_resampled
+DATA_PATH: data/Pipework/Pipework-yc
+N_POINTS: 8192
+NUM_CATEGORY: 17
+USE_NORMALS: FALSE

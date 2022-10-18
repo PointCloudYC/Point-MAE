@@ -1,0 +1,5 @@
+NAME: PipeworkFewShot
+DATA_PATH: data/PipeworkFewshot
+N_POINTS: 8192
+NUM_CATEGORY: 13
+USE_NORMALS: FALSE

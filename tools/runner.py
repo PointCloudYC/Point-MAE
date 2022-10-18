@@ -31,6 +31,7 @@ def test_net(args, config):
 
 
 # visualization
+# TODO: add for the pipework dataset support
 def test(base_model, test_dataloader, args, config, logger = None):
 
     base_model.eval()  # set model to eval mode

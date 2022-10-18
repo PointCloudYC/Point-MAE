@@ -76,7 +76,7 @@ def main():
         config.dataset.val.others.way = args.way
         config.dataset.val.others.fold = args.fold
         
-    # run
+    # run (KEY HERE!)
     if args.test:
         test_net(args, config)
     else:
