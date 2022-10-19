@@ -82,7 +82,15 @@ class Pipework(Dataset):
 
         assert (split == 'train' or split == 'test')
         # shape_names = ['_'.join(x.split('_')[0:-1]) for x in shape_ids[split]]
-        shape_names = [x.split('_')[0] for x in shape_ids[split]]
+        # shape_names = [x.split('_')[0] for x in shape_ids[split]]
+        shape_names=[]
+        for x in shape_ids[split]:
+            # HACK: due to naming inconsistency for the cross objects
+            if 'Cross' in x:
+                shape_names.append('Cross')
+            else:
+                shape_names.append(x.split('_')[0])
+
         # self.datapath = [(shape_names[i], os.path.join(self.root, shape_names[i], shape_ids[split][i]) + '.txt') for i
         #                  in range(len(shape_ids[split]))]
         self.datapath = [(shape_names[i], os.path.join(self.root, shape_names[i], shape_ids[split][i])) for i

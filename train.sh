@@ -9,4 +9,4 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
 --config cfgs/finetune_modelnet.yaml \
 --exp_name modelnet40-finetune \
 --ckpts experiments/pretrain/cfgs/ModelNet40-pretrain/ckpt-last.pth \
---finetune_model 
+--finetune_model

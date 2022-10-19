@@ -5,8 +5,13 @@
 
 
 # Fine-tuning on Pipework, run:
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+# CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+CUDA_VISIBLE_DEVICES=0 python main.py \
 --config cfgs/finetune_pipework.yaml \
 --exp_name pipework-finetune \
 --ckpts experiments/pretrain/cfgs/ModelNet40-pretrain/ckpt-last.pth \
 --finetune_model
+
+# Voting
+# CUDA_VISIBLE_DEVICES=<GPUs> python main.py --test --config cfgs/finetune_modelnet.yaml \
+# --exp_name <output_file_name> --ckpts <path/to/best/fine-tuned/model>
